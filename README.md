@@ -1,18 +1,18 @@
-# 🚀 Full Stack Portfolio Website
+# Full Stack Portfolio Website
 
 A modern, responsive portfolio website built with **React** (frontend) and **Node.js/Express** (backend). Features dark mode, smooth animations, and a contact form with email functionality.
 
 ## ✨ Features
 
-- 🎨 **Modern UI/UX** - Clean, responsive design with Tailwind CSS
-- 🌙 **Dark/Light Mode** - Toggle between themes with persistent storage
-- 🎭 **Smooth Animations** - Framer Motion for elegant transitions
-- 📧 **Contact Form** - Working contact form with email integration (Nodemailer)
-- 🗄️ **MongoDB Support** - Optional database for storing projects and messages
-- 📱 **Fully Responsive** - Mobile-first design that works on all devices
-- ⚡ **Fast Performance** - Built with Vite for optimal development and build experience
+-  **Modern UI/UX** - Clean, responsive design with Tailwind CSS
+-  **Dark/Light Mode** - Toggle between themes with persistent storage
+-  **Smooth Animations** - Framer Motion for elegant transitions
+-  **Contact Form** - Working contact form with email integration (Nodemailer)
+-  **MongoDB Support** - Optional database for storing projects and messages
+-  **Fully Responsive** - Mobile-first design that works on all devices
+- **Fast Performance** - Built with Vite for optimal development and build experience
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React 18
@@ -239,7 +239,7 @@ For Gmail, you need an App Password (not your regular password).
 
 MIT License - feel free to use this project for your portfolio!
 
-## 🙏 Credits
+## Credits
 
 Built with:
 - [React](https://reactjs.org/)
