@@ -78,7 +78,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-              placeholder="Your Name"
+              placeholder="Ananya Jaiswal"
             />
           </div>
 
@@ -124,11 +124,10 @@ const Contact = () => {
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`p-4 rounded-lg ${
-                status.type === 'success'
+              className={`p-4 rounded-lg ${status.type === 'success'
                   ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
                   : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
-              }`}
+                }`}
             >
               {status.message}
             </motion.div>

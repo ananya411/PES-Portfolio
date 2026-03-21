@@ -16,8 +16,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Certifications', href: '#certifications' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Resume', href: '/Ananya_Jaiswal_CV.pdf' },
   ];
+
+
 
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
@@ -30,11 +35,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
           ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -46,15 +50,28 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           </motion.div>
 
           <div className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              <button
-                key={link.name}
-                onClick={() => scrollToSection(link.href)}
-                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
-              >
-                {link.name}
-              </button>
-            ))}
+            {navLinks.map((link) =>
+              link.name === 'Resume' ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <button
+                  key={link.name}
+                  onClick={() => scrollToSection(link.href)}
+                  className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
+                >
+                  {link.name}
+                </button>
+              )
+            )}
           </div>
 
           <div className="flex items-center space-x-4">

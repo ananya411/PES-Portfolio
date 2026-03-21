@@ -48,8 +48,8 @@ const Hero = () => {
   }, []);
 
   const socialLinks = [
-    { icon: FaGithub, url: 'https://github.com', label: 'GitHub' },
-    { icon: FaLinkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: FaGithub, url: 'https://github.com/ananya411', label: 'GitHub' },
+    { icon: FaLinkedin, url: 'https://www.linkedin.com/in/ananya-jaiswal-688b9a27b/', label: 'LinkedIn' },
     { icon: FaTwitter, url: 'https://twitter.com', label: 'Twitter' },
     { icon: FaEnvelope, url: 'mailto:your.email@example.com', label: 'Email' },
   ];
@@ -69,7 +69,7 @@ const Hero = () => {
             className="text-5xl md:text-7xl font-bold mb-4 text-gray-900 dark:text-white"
           >
             Hi, I'm{' '}
-            <span className="text-primary-600 dark:text-primary-400">Your Name</span>
+            <span className="text-primary-600 dark:text-primary-400">Ananya Jaiswal</span>
           </motion.h1>
 
           <motion.p

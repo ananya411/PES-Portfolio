@@ -31,27 +31,25 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
 
-        <div className="flex space-x-4">
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-            >
-              <FaGithub />
-              <span>Code</span>
-            </a>
-          )}
+        <div className="flex gap-4 mt-6">
           {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              className="flex-1 flex justify-center items-center py-2 px-4 rounded-lg text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-md"
             >
-              <FaExternalLinkAlt />
-              <span>Live Demo</span>
+              Live Demo
+            </a>
+          )}
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex justify-center items-center py-2 px-4 rounded-lg text-sm font-medium text-indigo-400 border border-indigo-500 hover:bg-indigo-900/30 transition-all duration-300"
+            >
+              Source Code
             </a>
           )}
         </div>

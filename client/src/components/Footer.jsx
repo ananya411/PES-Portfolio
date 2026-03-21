@@ -3,8 +3,8 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const socialLinks = [
-    { icon: FaGithub, url: 'https://github.com', label: 'GitHub' },
-    { icon: FaLinkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: FaGithub, url: 'https://github.com/ananya411', label: 'GitHub' },
+    { icon: FaLinkedin, url: 'https://www.linkedin.com/in/ananya-jaiswal-688b9a27b/', label: 'LinkedIn' },
     { icon: FaTwitter, url: 'https://twitter.com', label: 'Twitter' },
     { icon: FaEnvelope, url: 'mailto:your.email@example.com', label: 'Email' },
   ];
