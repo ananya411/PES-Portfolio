@@ -58,9 +58,11 @@ const Certifications = () => {
                     <motion.div
                         key={index}
                         variants={itemVariants}
-                        className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-primary-500"
+                        whileHover={{ y: -8, scale: 1.02 }}
+                        className="group relative bg-white/60 dark:bg-gray-800/60 backdrop-blur-lg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 overflow-hidden"
                     >
-                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{cert.title}</h3>
+                        <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary-400 to-primary-600 transform origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">{cert.title}</h3>
                         <p className="text-primary-600 dark:text-primary-400 font-semibold mb-1">{cert.issuer}</p>
                         <p className="text-gray-500 dark:text-gray-400 text-sm mt-auto">{cert.date}</p>
                     </motion.div>

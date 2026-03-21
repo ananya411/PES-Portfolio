@@ -108,8 +108,8 @@ const About = () => {
               <motion.div
                 key={skill.name}
                 variants={itemVariants}
-                whileHover={{ scale: 1.1, y: -5 }}
-                className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                whileHover={{ scale: 1.15, rotate: [0, -5, 5, 0], boxShadow: "0px 10px 30px rgba(0,0,0,0.1)" }}
+                className="flex flex-col items-center p-6 rounded-2xl bg-white/50 backdrop-blur-md dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 border border-gray-100 dark:border-gray-700 shadow-sm"
               >
                 <skill.icon className={`text-4xl mb-2 ${skill.color}`} />
                 <span className="text-sm font-medium text-gray-700 dark:text-gray-300">

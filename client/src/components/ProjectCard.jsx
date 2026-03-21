@@ -5,14 +5,14 @@ import SkillBadge from './SkillBadge';
 const ProjectCard = ({ project }) => {
   return (
     <motion.div
-      whileHover={{ y: -10 }}
-      className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+      whileHover={{ y: -12, scale: 1.02 }}
+      className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-2xl hover:border-primary-500/50 transition-all duration-300 group"
     >
       <div className="relative h-48 overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+          className="w-full h-full object-cover transform group-hover:scale-125 transition-transform duration-700 ease-out"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
       </div>
